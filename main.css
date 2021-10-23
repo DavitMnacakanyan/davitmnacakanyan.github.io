@@ -22,6 +22,8 @@ body {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 14px;
     color: #efefef;
+    display: flex;
+    height: 85vh;
 }
 
 .container {
@@ -32,7 +34,6 @@ body {
 
 .header {
     display: grid;
-    justify-content: center;
     justify-items: center;
 }
 
@@ -74,6 +75,12 @@ body {
     background-color: white;
     color: rgb(36, 41, 47);
     box-shadow: inset -1px 3px 8px 5px white, 2px 5px 16px 0 white, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: 95vh;
+    }
 }
 
 @media only screen and (max-width: 600px) {
